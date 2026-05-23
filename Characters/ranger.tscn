@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://b0cvgsikgt6go"]
 
-[ext_resource type="PackedScene" uid="uid://cdchotai8hnob" path="res://Assets/characters/Ranger.glb" id="1_jx8mq"]
-[ext_resource type="PackedScene" uid="uid://n5xyonj7fqqu" path="res://Characters/animation_player/character_animation_player.tscn" id="2_0827x"]
+[ext_resource type="PackedScene" uid="uid://cdchotai8hnob" path="res://assets/characters/Ranger.glb" id="1_jx8mq"]
+[ext_resource type="PackedScene" uid="uid://n5xyonj7fqqu" path="res://characters/animation_player/character_animation_player.tscn" id="2_0827x"]
+[ext_resource type="Script" uid="uid://brgnioquq3at5" path="res://characters/animation_actor.gd" id="2_jwdms"]
 
 [node name="Ranger" unique_id=868592063 instance=ExtResource("1_jx8mq")]
+script = ExtResource("2_jwdms")
 
-[node name="Skeleton3D" parent="Rig_Medium" parent_id_path=PackedInt32Array(1434955225) index="0" unique_id=1917011825]
+[node name="Skeleton3D" parent="Rig_Medium" parent_id_path=PackedInt32Array(42303977) index="0" unique_id=805988745]
 bones/1/position = Vector3(0, 0.39206383, 0)
 bones/1/rotation = Quaternion(-1.11122625e-10, 0.043157753, 2.5724098e-09, 0.9990683)
 bones/1/scale = Vector3(0.99999994, 1, 0.99999994)

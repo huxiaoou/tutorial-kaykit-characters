@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://cuxyhkiw46ch6"]
 
-[ext_resource type="PackedScene" uid="uid://c4l08kyp676dn" path="res://Assets/characters/Knight.glb" id="1_f3g4y"]
-[ext_resource type="PackedScene" uid="uid://n5xyonj7fqqu" path="res://Characters/animation_player/character_animation_player.tscn" id="2_1auyl"]
+[ext_resource type="PackedScene" uid="uid://c4l08kyp676dn" path="res://assets/characters/Knight.glb" id="1_f3g4y"]
+[ext_resource type="PackedScene" uid="uid://n5xyonj7fqqu" path="res://characters/animation_player/character_animation_player.tscn" id="2_1auyl"]
+[ext_resource type="Script" uid="uid://brgnioquq3at5" path="res://characters/animation_actor.gd" id="2_3ygcs"]
 
 [node name="Knight" unique_id=2098063861 instance=ExtResource("1_f3g4y")]
+script = ExtResource("2_3ygcs")
 
-[node name="Skeleton3D" parent="Rig_Medium" parent_id_path=PackedInt32Array(376349940) index="0" unique_id=1615787232]
+[node name="Skeleton3D" parent="Rig_Medium" parent_id_path=PackedInt32Array(864727951) index="0" unique_id=114785818]
 bones/1/position = Vector3(0, 0.39206383, 0)
 bones/1/rotation = Quaternion(-1.11122625e-10, 0.043157753, 2.5724098e-09, 0.9990683)
 bones/1/scale = Vector3(0.99999994, 1, 0.99999994)

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cpkuj75icly6g"
-path="res://.godot/imported/Rig_Medium_MovementBasic.glb-16818b0465353fa22e8ddeda0a61bbca.scn"
+path="res://.godot/imported/Rig_Medium_MovementBasic.glb-1ee11681308508ea3ea6a30f6b84cfa9.scn"
 
 [deps]
 
-source_file="res://AnimationSources/Rig_Medium_MovementBasic.glb"
-dest_files=["res://.godot/imported/Rig_Medium_MovementBasic.glb-16818b0465353fa22e8ddeda0a61bbca.scn"]
+source_file="res://animation_sources/Rig_Medium_MovementBasic.glb"
+dest_files=["res://.godot/imported/Rig_Medium_MovementBasic.glb-1ee11681308508ea3ea6a30f6b84cfa9.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 "Jump_Full_Long": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Jump_Full_Long.res",
+"save_to_file/fallback_path": "res://animations/Jump_Full_Long.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://d14kn02royyak",
 "settings/loop_mode": 0,
@@ -2097,7 +2097,7 @@ _subresources={
 },
 "Jump_Full_Short": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Jump_Full_Short.res",
+"save_to_file/fallback_path": "res://animations/Jump_Full_Short.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://6p4cq6qfo7wl",
 "settings/loop_mode": 0,
@@ -4153,7 +4153,7 @@ _subresources={
 },
 "Jump_Idle": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Jump_Idle.res",
+"save_to_file/fallback_path": "res://animations/Jump_Idle.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://dc0no2q0nyxg1",
 "settings/loop_mode": 0,
@@ -6209,7 +6209,7 @@ _subresources={
 },
 "Jump_Land": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Jump_Land.res",
+"save_to_file/fallback_path": "res://animations/Jump_Land.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://do8m7pxl3hj7u",
 "settings/loop_mode": 0,
@@ -8265,7 +8265,7 @@ _subresources={
 },
 "Jump_Start": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Jump_Start.res",
+"save_to_file/fallback_path": "res://animations/Jump_Start.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://wn3674706561",
 "settings/loop_mode": 0,
@@ -10321,7 +10321,7 @@ _subresources={
 },
 "Running_A": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Running_A.res",
+"save_to_file/fallback_path": "res://animations/Running_A.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://q7xskyun2v5h",
 "settings/loop_mode": 1,
@@ -12377,7 +12377,7 @@ _subresources={
 },
 "Running_B": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Running_B.res",
+"save_to_file/fallback_path": "res://animations/Running_B.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bvfjr6dvjwwk5",
 "settings/loop_mode": 1,
@@ -14433,7 +14433,7 @@ _subresources={
 },
 "T-Pose": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/T-Pose.res",
+"save_to_file/fallback_path": "res://animations/T-Pose.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://iutnej3vx5xk",
 "settings/loop_mode": 0,
@@ -16489,7 +16489,7 @@ _subresources={
 },
 "Walking_A": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Walking_A.res",
+"save_to_file/fallback_path": "res://animations/Walking_A.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bmfaj8k0d4jax",
 "settings/loop_mode": 1,
@@ -18545,7 +18545,7 @@ _subresources={
 },
 "Walking_B": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Walking_B.res",
+"save_to_file/fallback_path": "res://animations/Walking_B.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://kr76qvp0xo0l",
 "settings/loop_mode": 1,
@@ -20601,7 +20601,7 @@ _subresources={
 },
 "Walking_C": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Walking_C.res",
+"save_to_file/fallback_path": "res://animations/Walking_C.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://2ovt2w3a1isi",
 "settings/loop_mode": 1,

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfe8fiwovrm1u"
-path.s3tc="res://.godot/imported/Ranger_ranger_texture.png-330a3238f4f1cdb20d734fe42dcc9e05.s3tc.ctex"
+path.s3tc="res://.godot/imported/Ranger_ranger_texture.png-b813d618d0242ea5081edda41e7e7b94.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Assets/characters/Ranger_ranger_texture.png"
-dest_files=["res://.godot/imported/Ranger_ranger_texture.png-330a3238f4f1cdb20d734fe42dcc9e05.s3tc.ctex"]
+source_file="res://assets/characters/Ranger_ranger_texture.png"
+dest_files=["res://.godot/imported/Ranger_ranger_texture.png-b813d618d0242ea5081edda41e7e7b94.s3tc.ctex"]
 
 [params]
 

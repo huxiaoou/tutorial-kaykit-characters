@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://clxbubmidupiw"
-path="res://.godot/imported/Mage.glb-cdae47fd2c925fcad3ddb1f6993883d7.scn"
+path="res://.godot/imported/Mage.glb-0f2a6ce37f463a7a25a1937582903e3a.scn"
 
 [deps]
 
-source_file="res://Assets/characters/Mage.glb"
-dest_files=["res://.godot/imported/Mage.glb-cdae47fd2c925fcad3ddb1f6993883d7.scn"]
+source_file="res://assets/characters/Mage.glb"
+dest_files=["res://.godot/imported/Mage.glb-0f2a6ce37f463a7a25a1937582903e3a.scn"]
 
 [params]
 

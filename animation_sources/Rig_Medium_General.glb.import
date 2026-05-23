@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://crigtnfxffpru"
-path="res://.godot/imported/Rig_Medium_General.glb-b77825ce218444bc53c2c2698a4c92e4.scn"
+path="res://.godot/imported/Rig_Medium_General.glb-5d023c18e0cb7be689fb9e64e7a2e65b.scn"
 
 [deps]
 
-source_file="res://AnimationSources/Rig_Medium_General.glb"
-dest_files=["res://.godot/imported/Rig_Medium_General.glb-b77825ce218444bc53c2c2698a4c92e4.scn"]
+source_file="res://animation_sources/Rig_Medium_General.glb"
+dest_files=["res://.godot/imported/Rig_Medium_General.glb-5d023c18e0cb7be689fb9e64e7a2e65b.scn"]
 
 [params]
 
@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 "Death_A": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Death_A.res",
+"save_to_file/fallback_path": "res://animations/Death_A.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bs02fd8lyaf86",
 "settings/loop_mode": 0,
@@ -2097,7 +2097,7 @@ _subresources={
 },
 "Death_A_Pose": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Death_A_Pose.res",
+"save_to_file/fallback_path": "res://animations/Death_A_Pose.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://djllhdtrtlfuc",
 "settings/loop_mode": 0,
@@ -4153,7 +4153,7 @@ _subresources={
 },
 "Death_B": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Death_B.res",
+"save_to_file/fallback_path": "res://animations/Death_B.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cch7b06h8niou",
 "settings/loop_mode": 0,
@@ -6209,7 +6209,7 @@ _subresources={
 },
 "Death_B_Pose": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Death_B_Pose.res",
+"save_to_file/fallback_path": "res://animations/Death_B_Pose.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://b41cx0x4k82ip",
 "settings/loop_mode": 0,
@@ -8265,7 +8265,7 @@ _subresources={
 },
 "Hit_A": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Hit_A.res",
+"save_to_file/fallback_path": "res://animations/Hit_A.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://duj0vj2fmgnq1",
 "settings/loop_mode": 0,
@@ -10321,7 +10321,7 @@ _subresources={
 },
 "Hit_B": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Hit_B.res",
+"save_to_file/fallback_path": "res://animations/Hit_B.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cqtsq5157y1uf",
 "settings/loop_mode": 0,
@@ -12377,7 +12377,7 @@ _subresources={
 },
 "Idle_A": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Idle_A.res",
+"save_to_file/fallback_path": "res://animations/Idle_A.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bvukjywijdu5o",
 "settings/loop_mode": 1,
@@ -14433,7 +14433,7 @@ _subresources={
 },
 "Idle_B": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Idle_B.res",
+"save_to_file/fallback_path": "res://animations/Idle_B.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://wctq82hrx18",
 "settings/loop_mode": 1,
@@ -16489,7 +16489,7 @@ _subresources={
 },
 "Interact": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Interact.res",
+"save_to_file/fallback_path": "res://animations/Interact.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://c6waxewevwnu",
 "settings/loop_mode": 0,
@@ -18545,7 +18545,7 @@ _subresources={
 },
 "PickUp": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/PickUp.res",
+"save_to_file/fallback_path": "res://animations/PickUp.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bdiqp2c27ibru",
 "settings/loop_mode": 0,
@@ -20601,7 +20601,7 @@ _subresources={
 },
 "Spawn_Air": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Spawn_Air.res",
+"save_to_file/fallback_path": "res://animations/Spawn_Air.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://dtyw4sp5k0rop",
 "settings/loop_mode": 0,
@@ -22657,7 +22657,7 @@ _subresources={
 },
 "Spawn_Ground": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Spawn_Ground.res",
+"save_to_file/fallback_path": "res://animations/Spawn_Ground.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://rnolo3gqr1c1",
 "settings/loop_mode": 0,
@@ -24713,7 +24713,7 @@ _subresources={
 },
 "T-Pose": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/T-Pose.res",
+"save_to_file/fallback_path": "res://animations/T-Pose.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://iutnej3vx5xk",
 "settings/loop_mode": 0,
@@ -26769,7 +26769,7 @@ _subresources={
 },
 "Throw": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Throw.res",
+"save_to_file/fallback_path": "res://animations/Throw.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://ce4ntp43sh2gt",
 "settings/loop_mode": 0,
@@ -28825,7 +28825,7 @@ _subresources={
 },
 "Use_Item": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Animations/Use_Item.res",
+"save_to_file/fallback_path": "res://animations/Use_Item.res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://cl8e64pd170fj",
 "settings/loop_mode": 0,
