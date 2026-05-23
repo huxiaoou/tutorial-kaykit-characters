@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://b3d33a608wjyq"]
+
+[ext_resource type="PackedScene" uid="uid://clxbubmidupiw" path="res://Assets/characters/Mage.glb" id="1_nq38w"]
+[ext_resource type="Animation" uid="uid://bs02fd8lyaf86" path="res://Animations/Death_A.res" id="2_5vaq8"]
+[ext_resource type="Script" uid="uid://brgnioquq3at5" path="res://Characters/mage.gd" id="2_7cj0i"]
+[ext_resource type="Animation" uid="uid://djllhdtrtlfuc" path="res://Animations/Death_A_Pose.res" id="3_7cj0i"]
+[ext_resource type="Animation" uid="uid://cch7b06h8niou" path="res://Animations/Death_B.res" id="4_hqtd5"]
+[ext_resource type="Animation" uid="uid://b41cx0x4k82ip" path="res://Animations/Death_B_Pose.res" id="5_7cdx6"]
+[ext_resource type="Animation" uid="uid://duj0vj2fmgnq1" path="res://Animations/Hit_A.res" id="6_p8a7a"]
+[ext_resource type="Animation" uid="uid://cqtsq5157y1uf" path="res://Animations/Hit_B.res" id="7_qgub7"]
+[ext_resource type="Animation" uid="uid://bvukjywijdu5o" path="res://Animations/Idle_A.res" id="8_ywvae"]
+[ext_resource type="Animation" uid="uid://wctq82hrx18" path="res://Animations/Idle_B.res" id="9_nesa5"]
+[ext_resource type="Animation" uid="uid://c6waxewevwnu" path="res://Animations/Interact.res" id="10_j7ev7"]
+[ext_resource type="Animation" uid="uid://d14kn02royyak" path="res://Animations/Jump_Full_Long.res" id="11_2f3ol"]
+[ext_resource type="Animation" uid="uid://6p4cq6qfo7wl" path="res://Animations/Jump_Full_Short.res" id="12_6y1lm"]
+[ext_resource type="Animation" uid="uid://dc0no2q0nyxg1" path="res://Animations/Jump_Idle.res" id="13_hht5f"]
+[ext_resource type="Animation" uid="uid://do8m7pxl3hj7u" path="res://Animations/Jump_Land.res" id="14_jofrf"]
+[ext_resource type="Animation" uid="uid://wn3674706561" path="res://Animations/Jump_Start.res" id="15_p1vwo"]
+[ext_resource type="Animation" uid="uid://bdiqp2c27ibru" path="res://Animations/PickUp.res" id="16_mn21u"]
+[ext_resource type="Animation" uid="uid://q7xskyun2v5h" path="res://Animations/Running_A.res" id="17_dbc6d"]
+[ext_resource type="Animation" uid="uid://bvfjr6dvjwwk5" path="res://Animations/Running_B.res" id="18_x5bqd"]
+[ext_resource type="Animation" uid="uid://dtyw4sp5k0rop" path="res://Animations/Spawn_Air.res" id="19_lq5ls"]
+[ext_resource type="Animation" uid="uid://rnolo3gqr1c1" path="res://Animations/Spawn_Ground.res" id="20_4x5wu"]
+[ext_resource type="Animation" uid="uid://iutnej3vx5xk" path="res://Animations/T-Pose.res" id="21_ecyxq"]
+[ext_resource type="Animation" uid="uid://ce4ntp43sh2gt" path="res://Animations/Throw.res" id="22_gwd13"]
+[ext_resource type="Animation" uid="uid://cl8e64pd170fj" path="res://Animations/Use_Item.res" id="23_4wolp"]
+[ext_resource type="Animation" uid="uid://bmfaj8k0d4jax" path="res://Animations/Walking_A.res" id="24_fdqdi"]
+[ext_resource type="Animation" uid="uid://kr76qvp0xo0l" path="res://Animations/Walking_B.res" id="25_nr62h"]
+[ext_resource type="Animation" uid="uid://2ovt2w3a1isi" path="res://Animations/Walking_C.res" id="26_5ljcd"]
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2luif"]
+_data = {
+&"Death_A": ExtResource("2_5vaq8"),
+&"Death_A_Pose": ExtResource("3_7cj0i"),
+&"Death_B": ExtResource("4_hqtd5"),
+&"Death_B_Pose": ExtResource("5_7cdx6"),
+&"Hit_A": ExtResource("6_p8a7a"),
+&"Hit_B": ExtResource("7_qgub7"),
+&"Idle_A": ExtResource("8_ywvae"),
+&"Idle_B": ExtResource("9_nesa5"),
+&"Interact": ExtResource("10_j7ev7"),
+&"Jump_Full_Long": ExtResource("11_2f3ol"),
+&"Jump_Full_Short": ExtResource("12_6y1lm"),
+&"Jump_Idle": ExtResource("13_hht5f"),
+&"Jump_Land": ExtResource("14_jofrf"),
+&"Jump_Start": ExtResource("15_p1vwo"),
+&"PickUp": ExtResource("16_mn21u"),
+&"Running_A": ExtResource("17_dbc6d"),
+&"Running_B": ExtResource("18_x5bqd"),
+&"Spawn_Air": ExtResource("19_lq5ls"),
+&"Spawn_Ground": ExtResource("20_4x5wu"),
+&"T-Pose": ExtResource("21_ecyxq"),
+&"Throw": ExtResource("22_gwd13"),
+&"Use_Item": ExtResource("23_4wolp"),
+&"Walking_A": ExtResource("24_fdqdi"),
+&"Walking_B": ExtResource("25_nr62h"),
+&"Walking_C": ExtResource("26_5ljcd")
+}
+
+[node name="Mage" unique_id=504575918 instance=ExtResource("1_nq38w")]
+script = ExtResource("2_7cj0i")
+
+[node name="Rig_Medium" parent="." index="0" unique_id=1423642429]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="Skeleton3D" parent="Rig_Medium" index="0" unique_id=265822578]
+bones/1/position = Vector3(0, 0.4171587, 0)
+bones/1/rotation = Quaternion(0.095845774, -1.1866046e-07, 1.1425705e-08, 0.9953962)
+bones/2/position = Vector3(-0.17094506, 0.11358735, -0.10000001)
+bones/2/rotation = Quaternion(0.98625875, 2.700978e-07, -2.1307404e-08, -0.16520801)
+bones/3/rotation = Quaternion(0.49409893, -6.002629e-08, 3.431345e-07, 0.86940575)
+bones/4/rotation = Quaternion(-0.25984055, 2.8457643e-07, -2.012656e-07, 0.9656516)
+bones/5/rotation = Quaternion(2.1433177e-08, 0.9205717, -0.3905736, 6.4466455e-08)
+bones/6/rotation = Quaternion(0, 0.1281281, -0.024905568, 0.9914449)
+bones/7/rotation = Quaternion(-3.7252903e-09, 7.4505793e-09, -9.3132224e-10, 1)
+bones/8/position = Vector3(0.21200737, 0.124591716, -0.049081296)
+bones/8/rotation = Quaternion(-0.6724167, 0.10603064, -0.4246795, 0.59687585)
+bones/9/rotation = Quaternion(-1.6093017e-08, -1.802597e-08, -0.5154912, 0.8568949)
+bones/10/rotation = Quaternion(2.6357031e-11, 6.232488e-10, 0.026658094, 0.99964464)
+bones/10/scale = Vector3(1.0000001, 1, 1)
+bones/11/rotation = Quaternion(-0.36341816, 0.06376812, -0.18752447, 0.9103271)
+bones/12/rotation = Quaternion(-0.029139014, -0.079847366, -0.8339414, 0.54526794)
+bones/13/rotation = Quaternion(-0.06915971, -0.12955327, 0.015907133, 0.98902977)
+bones/14/position = Vector3(-0.21200739, 0.1436727, 0.049081426)
+bones/14/rotation = Quaternion(-0.73190755, 0.34116226, 0.5319017, 0.25495163)
+bones/15/rotation = Quaternion(6.307295e-08, 7.370152e-08, 0.56658787, 0.82400143)
+bones/16/rotation = Quaternion(-3.002606e-08, -9.604189e-09, -0.026658088, 0.99964464)
+bones/16/scale = Vector3(1.0000001, 1.0000001, 1)
+bones/17/rotation = Quaternion(-0.07309579, 0.4268189, 0.15644099, 0.88769865)
+bones/18/rotation = Quaternion(-0.061732214, -0.04616079, 0.41383556, 0.90708244)
+bones/19/position = Vector3(0.17094506, 0.11358723, 0.10000004)
+bones/19/rotation = Quaternion(0.87406147, -8.3038195e-08, 2.4776313e-08, 0.4858154)
+bones/20/rotation = Quaternion(0.21908584, 6.73655e-08, -1.5214744e-07, 0.97570556)
+bones/21/rotation = Quaternion(-0.60178953, -3.642158e-08, -4.1305782e-08, 0.79865474)
+bones/22/rotation = Quaternion(-4.421328e-08, 0.9201735, -0.39151067, 5.406565e-08)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1" unique_id=667548574]
+libraries/Player = SubResource("AnimationLibrary_2luif")
+autoplay = &"Player/Idle_A"
+
+[node name="Camera3D" type="Camera3D" parent="." index="2" unique_id=1911506185]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 0, 2.6434941, 3.3767624)
