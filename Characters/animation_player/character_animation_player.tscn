@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://n5xyonj7fqqu"]
+
+[ext_resource type="Animation" uid="uid://bs02fd8lyaf86" path="res://Animations/Death_A.res" id="1_5by51"]
+[ext_resource type="Animation" uid="uid://djllhdtrtlfuc" path="res://Animations/Death_A_Pose.res" id="2_6vpm3"]
+[ext_resource type="Animation" uid="uid://cch7b06h8niou" path="res://Animations/Death_B.res" id="3_sdgi3"]
+[ext_resource type="Animation" uid="uid://b41cx0x4k82ip" path="res://Animations/Death_B_Pose.res" id="4_j4nhk"]
+[ext_resource type="Animation" uid="uid://duj0vj2fmgnq1" path="res://Animations/Hit_A.res" id="5_7subb"]
+[ext_resource type="Animation" uid="uid://cqtsq5157y1uf" path="res://Animations/Hit_B.res" id="6_rjx4u"]
+[ext_resource type="Animation" uid="uid://bvukjywijdu5o" path="res://Animations/Idle_A.res" id="7_3o1qp"]
+[ext_resource type="Animation" uid="uid://wctq82hrx18" path="res://Animations/Idle_B.res" id="8_4pnqb"]
+[ext_resource type="Animation" uid="uid://c6waxewevwnu" path="res://Animations/Interact.res" id="9_0l01d"]
+[ext_resource type="Animation" uid="uid://d14kn02royyak" path="res://Animations/Jump_Full_Long.res" id="10_ord8l"]
+[ext_resource type="Animation" uid="uid://6p4cq6qfo7wl" path="res://Animations/Jump_Full_Short.res" id="11_m5y1m"]
+[ext_resource type="Animation" uid="uid://dc0no2q0nyxg1" path="res://Animations/Jump_Idle.res" id="12_opiln"]
+[ext_resource type="Animation" uid="uid://do8m7pxl3hj7u" path="res://Animations/Jump_Land.res" id="13_rfn1v"]
+[ext_resource type="Animation" uid="uid://wn3674706561" path="res://Animations/Jump_Start.res" id="14_p7nuc"]
+[ext_resource type="Animation" uid="uid://bdiqp2c27ibru" path="res://Animations/PickUp.res" id="15_bwoth"]
+[ext_resource type="Animation" uid="uid://q7xskyun2v5h" path="res://Animations/Running_A.res" id="16_r8e2o"]
+[ext_resource type="Animation" uid="uid://bvfjr6dvjwwk5" path="res://Animations/Running_B.res" id="17_oejsh"]
+[ext_resource type="Animation" uid="uid://dtyw4sp5k0rop" path="res://Animations/Spawn_Air.res" id="18_sm1kn"]
+[ext_resource type="Animation" uid="uid://rnolo3gqr1c1" path="res://Animations/Spawn_Ground.res" id="19_vv422"]
+[ext_resource type="Animation" uid="uid://iutnej3vx5xk" path="res://Animations/T-Pose.res" id="20_8ym7u"]
+[ext_resource type="Animation" uid="uid://ce4ntp43sh2gt" path="res://Animations/Throw.res" id="21_urbvy"]
+[ext_resource type="Animation" uid="uid://cl8e64pd170fj" path="res://Animations/Use_Item.res" id="22_e5pmd"]
+[ext_resource type="Animation" uid="uid://bmfaj8k0d4jax" path="res://Animations/Walking_A.res" id="23_ns2n2"]
+[ext_resource type="Animation" uid="uid://kr76qvp0xo0l" path="res://Animations/Walking_B.res" id="24_fwjqt"]
+[ext_resource type="Animation" uid="uid://2ovt2w3a1isi" path="res://Animations/Walking_C.res" id="25_k5geh"]
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2luif"]
+_data = {
+&"Death_A": ExtResource("1_5by51"),
+&"Death_A_Pose": ExtResource("2_6vpm3"),
+&"Death_B": ExtResource("3_sdgi3"),
+&"Death_B_Pose": ExtResource("4_j4nhk"),
+&"Hit_A": ExtResource("5_7subb"),
+&"Hit_B": ExtResource("6_rjx4u"),
+&"Idle_A": ExtResource("7_3o1qp"),
+&"Idle_B": ExtResource("8_4pnqb"),
+&"Interact": ExtResource("9_0l01d"),
+&"Jump_Full_Long": ExtResource("10_ord8l"),
+&"Jump_Full_Short": ExtResource("11_m5y1m"),
+&"Jump_Idle": ExtResource("12_opiln"),
+&"Jump_Land": ExtResource("13_rfn1v"),
+&"Jump_Start": ExtResource("14_p7nuc"),
+&"PickUp": ExtResource("15_bwoth"),
+&"Running_A": ExtResource("16_r8e2o"),
+&"Running_B": ExtResource("17_oejsh"),
+&"Spawn_Air": ExtResource("18_sm1kn"),
+&"Spawn_Ground": ExtResource("19_vv422"),
+&"T-Pose": ExtResource("20_8ym7u"),
+&"Throw": ExtResource("21_urbvy"),
+&"Use_Item": ExtResource("22_e5pmd"),
+&"Walking_A": ExtResource("23_ns2n2"),
+&"Walking_B": ExtResource("24_fwjqt"),
+&"Walking_C": ExtResource("25_k5geh")
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" unique_id=1142356509]
+libraries/Player = SubResource("AnimationLibrary_2luif")
+autoplay = &"Player/Idle_A"
