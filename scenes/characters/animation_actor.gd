@@ -3,6 +3,13 @@ extends Node3D
 class_name AnimationActor
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var rig_medium: Node3D = $Rig_Medium
+
+
+func _ready() -> void:
+    rig_medium.rotate(Vector3.UP, PI / 2)
+    print("AnimationActor ready")
+    return
 
 
 func play_idle_a() -> void:

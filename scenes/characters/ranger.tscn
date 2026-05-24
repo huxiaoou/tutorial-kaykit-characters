@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://b0cvgsikgt6go"]
 
 [ext_resource type="PackedScene" uid="uid://cdchotai8hnob" path="res://assets/characters/Ranger.glb" id="1_jx8mq"]
-[ext_resource type="PackedScene" uid="uid://n5xyonj7fqqu" path="res://characters/animation_player/character_animation_player.tscn" id="2_0827x"]
-[ext_resource type="Script" uid="uid://brgnioquq3at5" path="res://characters/animation_actor.gd" id="2_jwdms"]
+[ext_resource type="PackedScene" uid="uid://n5xyonj7fqqu" path="res://scenes/characters/animation_player/character_animation_player.tscn" id="2_0827x"]
+[ext_resource type="Script" uid="uid://brgnioquq3at5" path="res://scenes/characters/animation_actor.gd" id="2_jwdms"]
 
 [node name="Ranger" unique_id=868592063 instance=ExtResource("1_jx8mq")]
 script = ExtResource("2_jwdms")

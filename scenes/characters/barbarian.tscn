@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bj3xxcmn8h42p"]
 
 [ext_resource type="PackedScene" uid="uid://t7gcxvwxns2r" path="res://assets/characters/Barbarian.glb" id="1_fkrmr"]
-[ext_resource type="PackedScene" uid="uid://n5xyonj7fqqu" path="res://characters/animation_player/character_animation_player.tscn" id="2_om01m"]
-[ext_resource type="Script" uid="uid://brgnioquq3at5" path="res://characters/animation_actor.gd" id="2_v8wdw"]
+[ext_resource type="PackedScene" uid="uid://n5xyonj7fqqu" path="res://scenes/characters/animation_player/character_animation_player.tscn" id="2_om01m"]
+[ext_resource type="Script" uid="uid://brgnioquq3at5" path="res://scenes/characters/animation_actor.gd" id="2_v8wdw"]
 
 [node name="Barbarian" unique_id=1571861273 instance=ExtResource("1_fkrmr")]
 script = ExtResource("2_v8wdw")

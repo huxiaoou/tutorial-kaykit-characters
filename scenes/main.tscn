@@ -1,5 +1,20 @@
 [gd_scene format=3 uid="uid://dqu3h0xokpl55"]
 
+[ext_resource type="PackedScene" uid="uid://dhpjj3qwihukj" path="res://scenes/unit.tscn" id="1_o5qli"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o5qli"]
+sky_top_color = Color(0.6939875, 0.35551327, 0.033437107, 1)
+sky_horizon_color = Color(0.18961105, 0.42651907, 0.66644615, 1)
+ground_bottom_color = Color(0.6222403, 0.5533939, 0.4764716, 1)
+ground_horizon_color = Color(0.18961105, 0.42651907, 0.66644615, 1)
+
+[sub_resource type="Sky" id="Sky_0wfyh"]
+sky_material = SubResource("ProceduralSkyMaterial_o5qli")
+
+[sub_resource type="Environment" id="Environment_sugp2"]
+background_mode = 2
+sky = SubResource("Sky_0wfyh")
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sgp6g"]
 albedo_color = Color(0.2681376, 0.26813763, 0.2681376, 1)
 
@@ -7,7 +22,25 @@ albedo_color = Color(0.2681376, 0.26813763, 0.2681376, 1)
 material = SubResource("StandardMaterial3D_sgp6g")
 size = Vector2(100, 100)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o5qli"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_0wfyh"]
+material = SubResource("StandardMaterial3D_o5qli")
+
 [node name="Main" type="Node3D" unique_id=762059703]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=336248044]
+environment = SubResource("Environment_sugp2")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1100717395]
+transform = Transform3D(0.70710677, 0.49999997, -0.49999997, 0, 0.70710677, 0.70710677, 0.70710677, -0.49999997, 0.49999997, 0, 0, 0)
+shadow_enabled = true
 
 [node name="Ground" type="MeshInstance3D" parent="." unique_id=1549008959]
 mesh = SubResource("PlaneMesh_sgp6g")
+
+[node name="Unit" parent="." unique_id=1529780372 instance=ExtResource("1_o5qli")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=715894045]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7659626, 0.5, 1)
+mesh = SubResource("BoxMesh_0wfyh")

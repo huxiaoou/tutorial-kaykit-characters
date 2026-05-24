@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cen3sm0ryj6b4"]
 
 [ext_resource type="PackedScene" uid="uid://ubitatidf3nd" path="res://assets/characters/Rogue_Hooded.glb" id="1_wojrq"]
-[ext_resource type="PackedScene" uid="uid://n5xyonj7fqqu" path="res://characters/animation_player/character_animation_player.tscn" id="2_4o1jp"]
-[ext_resource type="Script" uid="uid://brgnioquq3at5" path="res://characters/animation_actor.gd" id="2_h5gyo"]
+[ext_resource type="PackedScene" uid="uid://n5xyonj7fqqu" path="res://scenes/characters/animation_player/character_animation_player.tscn" id="2_4o1jp"]
+[ext_resource type="Script" uid="uid://brgnioquq3at5" path="res://scenes/characters/animation_actor.gd" id="2_h5gyo"]
 
 [node name="Rogue_Hooded" unique_id=1614634326 instance=ExtResource("1_wojrq")]
 script = ExtResource("2_h5gyo")

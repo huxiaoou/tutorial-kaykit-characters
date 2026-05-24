@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cuxyhkiw46ch6"]
 
 [ext_resource type="PackedScene" uid="uid://c4l08kyp676dn" path="res://assets/characters/Knight.glb" id="1_f3g4y"]
-[ext_resource type="PackedScene" uid="uid://n5xyonj7fqqu" path="res://characters/animation_player/character_animation_player.tscn" id="2_1auyl"]
-[ext_resource type="Script" uid="uid://brgnioquq3at5" path="res://characters/animation_actor.gd" id="2_3ygcs"]
+[ext_resource type="PackedScene" uid="uid://n5xyonj7fqqu" path="res://scenes/characters/animation_player/character_animation_player.tscn" id="2_1auyl"]
+[ext_resource type="Script" uid="uid://brgnioquq3at5" path="res://scenes/characters/animation_actor.gd" id="2_3ygcs"]
 
 [node name="Knight" unique_id=2098063861 instance=ExtResource("1_f3g4y")]
 script = ExtResource("2_3ygcs")
