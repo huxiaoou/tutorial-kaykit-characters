@@ -3,11 +3,13 @@ extends CharacterBody3D
 
 class_name Unit
 
+signal rotation_changed(new_rotation: float)
+
 @export var move_speed: float = 5.0
-@export var jump_velocity: float = 8.0
-@export var gravity: float = 9.8
 @export var actor_scene: Config.ActorScene = Config.ActorScene.BARBARIAN
 
+var jump_velocity: float = 7.0
+var gravity: float = 9.8
 var actor_instance: AnimationActor = null
 var _current_state: State = null
 var _states: Dictionary = { }
@@ -62,7 +64,7 @@ class WalkState extends State:
         if Input.is_action_just_pressed("jump") and unit.is_on_floor():
             return "jump"
         if direction != Vector2.ZERO:
-            unit.actor_instance.global_rotation.y = -direction.angle()
+            unit.rotation_changed.emit(-direction.angle())
             unit.velocity = Vector3(direction.x, 0, direction.y) * unit.move_speed + Vector3.DOWN * unit.gravity
             unit.move_and_slide()
             return ""
@@ -123,6 +125,19 @@ func _ready() -> void:
     for state in _states.values():
         state.unit = self
     _transition_to("idle")
+    rotation_changed.connect(_on_rotation_changed)
+    return
+
+
+func _on_rotation_changed(new_rotation: float) -> void:
+    var tw: Tween = create_tween()
+    var current_rotation: float = actor_instance.rotation.y
+    tw.tween_method(
+        func(weight: float): actor_instance.rotation.y = lerp_angle(current_rotation, new_rotation, weight),
+        0.0,
+        1.0,
+        0.2,
+    )
     return
 
 
