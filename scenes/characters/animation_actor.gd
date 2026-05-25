@@ -38,3 +38,15 @@ func play_running_a() -> void:
 
 func play_running_b() -> void:
     animation_player.play("Player/Running_B")
+
+
+func play_throw() -> void:
+    animation_player.play("Player/Throw")
+
+
+func play_jump_full_short() -> void:
+    animation_player.play("Player/Jump_Full_Short")
+
+
+func is_animation_finished() -> bool:
+    return not animation_player.is_playing()
