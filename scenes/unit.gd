@@ -4,24 +4,27 @@ extends CharacterBody3D
 class_name Unit
 
 @export var move_speed: float = 5.0
-@export var jump_velocity: float = 5.0
+@export var jump_velocity: float = 8.0
 @export var gravity: float = 9.8
 @export var actor_scene: Config.ActorScene = Config.ActorScene.BARBARIAN
 
 var actor_instance: AnimationActor = null
 var _current_state: State = null
-var _states: Dictionary = {}
+var _states: Dictionary = { }
 
 
 # --- State Base Class ---
 class State:
     var unit: Unit
 
+
     func enter() -> void:
         pass
 
+
     func exit() -> void:
         pass
+
 
     func physics_update(_delta: float) -> String:
         return ""
@@ -32,8 +35,11 @@ class IdleState extends State:
     func enter() -> void:
         unit.actor_instance.play_idle_a()
 
+
     func physics_update(_delta: float) -> String:
         var direction: Vector2 = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
+        unit.velocity = Vector3.DOWN * unit.gravity * _delta
+        unit.move_and_slide()
         if direction != Vector2.ZERO:
             return "walk"
         if Input.is_action_just_pressed("attack"):
@@ -48,6 +54,7 @@ class WalkState extends State:
     func enter() -> void:
         unit.actor_instance.play_walking_a()
 
+
     func physics_update(_delta: float) -> String:
         var direction: Vector2 = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
         if Input.is_action_just_pressed("attack"):
@@ -56,7 +63,7 @@ class WalkState extends State:
             return "jump"
         if direction != Vector2.ZERO:
             unit.actor_instance.global_rotation.y = -direction.angle()
-            unit.velocity = Vector3(direction.x, 0, direction.y) * unit.move_speed
+            unit.velocity = Vector3(direction.x, 0, direction.y) * unit.move_speed + Vector3.DOWN * unit.gravity
             unit.move_and_slide()
             return ""
         return "idle"
@@ -64,17 +71,22 @@ class WalkState extends State:
 
 # --- Attack State ---
 class AttackState extends State:
-    var _started: bool = false
+    var _finished: bool = true
+
+
+    func _on_animation_finished(_anim_name: String) -> void:
+        _finished = true
+        unit.actor_instance.animation_player.animation_finished.disconnect(_on_animation_finished)
+
 
     func enter() -> void:
-        _started = false
-        unit.actor_instance.play_throw()
+        unit.actor_instance.play_attack()
+        unit.actor_instance.animation_player.animation_finished.connect(_on_animation_finished)
+        _finished = false
+
 
     func physics_update(_delta: float) -> String:
-        if not _started:
-            _started = true
-            return ""
-        if unit.actor_instance.is_animation_finished():
+        if _finished:
             return "idle"
         return ""
 
@@ -84,6 +96,7 @@ class JumpState extends State:
     func enter() -> void:
         unit.velocity.y = unit.jump_velocity
         unit.actor_instance.play_jump_full_short()
+
 
     func physics_update(delta: float) -> String:
         unit.velocity.y -= unit.gravity * delta
@@ -119,6 +132,7 @@ func _transition_to(state_name: String) -> void:
         return
     if _current_state:
         _current_state.exit()
+    print("Transitioning to state: " + state_name)
     _current_state = _states[state_name]
     _current_state.enter()
 
