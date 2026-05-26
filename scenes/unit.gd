@@ -8,6 +8,7 @@ signal rotation_changed(new_rotation: float)
 @export var move_speed: float = 5.0
 @export var actor_scene: Config.ActorScene = Config.ActorScene.BARBARIAN
 
+var friction: float = 5.0
 var jump_velocity: float = 7.0
 var gravity: float = 9.8
 var actor_instance: AnimationActor = null
@@ -118,10 +119,10 @@ func _ready() -> void:
     if Engine.is_editor_hint():
         return
     _states = {
-        "idle":   IdleState.new(self),
-        "walk":   WalkState.new(self),
+        "idle": IdleState.new(self),
+        "walk": WalkState.new(self),
         "attack": AttackState.new(self),
-        "jump":   JumpState.new(self),
+        "jump": JumpState.new(self),
     }
     _transition_to("idle")
     rotation_changed.connect(_on_rotation_changed)
@@ -138,7 +139,7 @@ func apply_gravity(delta: float) -> void:
 # Resets vertical velocity to a constant downward nudge and slides.
 # Used by grounded states (idle) to keep the character pressed to the floor.
 func apply_floor_gravity(delta: float) -> void:
-    velocity = Vector3.DOWN * gravity * delta
+    velocity += (-velocity * Config.XZ_PLANE * friction + Vector3.DOWN * gravity) * delta
     move_and_slide()
 
 

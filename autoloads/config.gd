@@ -17,3 +17,5 @@ const ACTOR_SCENE_PATHS = {
     ActorScene.ROGUE: "res://scenes/characters/Rogue.tscn",
     ActorScene.ROGUE_HOODED: "res://scenes/characters/Rogue_Hooded.tscn",
 }
+
+const XZ_PLANE: Vector3 = Vector3(1, 0, 1)
