@@ -89,6 +89,7 @@ class AttackState extends State:
 
 
     func physics_update(_delta: float) -> String:
+        unit.apply_floor_gravity(_delta)
         if _finished:
             return "idle"
         return ""
