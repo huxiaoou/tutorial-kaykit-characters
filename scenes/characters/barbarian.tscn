@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://t7gcxvwxns2r" path="res://assets/characters/Barbarian.glb" id="1_fkrmr"]
 [ext_resource type="PackedScene" uid="uid://n5xyonj7fqqu" path="res://scenes/characters/animation_player/character_animation_player.tscn" id="2_om01m"]
 [ext_resource type="Script" uid="uid://brgnioquq3at5" path="res://scenes/characters/animation_actor.gd" id="2_v8wdw"]
+[ext_resource type="PackedScene" uid="uid://d4fwrn7bwrf8n" path="res://assets/weapons/axe_1handed.gltf" id="3_s7x8m"]
 
 [node name="Barbarian" unique_id=1571861273 instance=ExtResource("1_fkrmr")]
 script = ExtResource("2_v8wdw")
@@ -59,5 +60,13 @@ bones/21/rotation = Quaternion(-0.5590394, 0.11451276, -0.008627633, 0.82115)
 bones/21/scale = Vector3(0.99999976, 1.0000006, 0.9999992)
 bones/22/rotation = Quaternion(-8.934892e-05, 0.9202217, -0.3913977, 2.0290998e-05)
 bones/22/scale = Vector3(1.0000002, 0.9999979, 1.0000024)
+
+[node name="BoneAttachment3D" type="BoneAttachment3D" parent="Rig_Medium/Skeleton3D" index="7" unique_id=1637817293]
+transform = Transform3D(6.0328017e-07, -0.14989421, -0.9887017, -0.99999887, 2.0861614e-07, 9.416043e-08, -3.5968725e-07, 0.9887013, -0.1498949, -0.4910608, 0.64102995, 0.10659543)
+bone_name = "handslot.r"
+bone_idx = 14
+
+[node name="axe_1handed2" parent="Rig_Medium/Skeleton3D/BoneAttachment3D" index="0" unique_id=1043787070 instance=ExtResource("3_s7x8m")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
 
 [node name="AnimationPlayer" parent="." index="1" unique_id=1142356509 instance=ExtResource("2_om01m")]
