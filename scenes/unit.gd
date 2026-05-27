@@ -7,6 +7,7 @@ signal rotation_changed(new_rotation: float)
 
 @export var move_speed: float = 5.0
 @export var actor_scene: Config.ActorScene = Config.ActorScene.BARBARIAN
+@export var data_equipment: DataEquipment = preload("res://resources/axe_1handed.tres")
 
 var friction: float = 4.0
 var jump_velocity: float = 7.0
@@ -22,6 +23,8 @@ func _ready() -> void:
     rotation_changed.connect(_on_rotation_changed)
     unit_fsm = UnitFsm.new()
     unit_fsm.setup(self)
+    if data_equipment:
+        actor_instance.equip_weapon(data_equipment)
     return
 
 

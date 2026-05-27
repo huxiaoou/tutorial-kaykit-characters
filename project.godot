@@ -23,6 +23,12 @@ Config="*uid://bq4o2puw4qmt0"
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 
+[file_customization]
+
+folder_colors={
+"res://assets/": "green"
+}
+
 [input]
 
 jump={

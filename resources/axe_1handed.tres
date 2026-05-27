@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="DataEquipment" format=3 uid="uid://b0b4586hsae4y"]
+
+[ext_resource type="PackedScene" uid="uid://d4fwrn7bwrf8n" path="res://assets/weapons/axe_1handed.gltf" id="1_2y5pj"]
+[ext_resource type="Script" uid="uid://bj7ryle2g10cx" path="res://typedef/data_equipment.gd" id="2_mqm2m"]
+
+[resource]
+script = ExtResource("2_mqm2m")
+metadata/_custom_type_script = "uid://bj7ryle2g10cx"

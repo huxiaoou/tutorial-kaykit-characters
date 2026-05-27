@@ -4,6 +4,7 @@ class_name AnimationActor
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var rig_medium: Node3D = $Rig_Medium
+@onready var skeleton_3d: Skeleton3D = $Rig_Medium/Skeleton3D
 
 const TRANSITION_TIME: float = 0.3
 
@@ -11,6 +12,16 @@ const TRANSITION_TIME: float = 0.3
 func _ready() -> void:
     rig_medium.rotate(Vector3.UP, PI / 2)
     print("AnimationActor ready")
+    return
+
+
+func equip_weapon(equipment_data: DataEquipment) -> void:
+    var bone_attachment: BoneAttachment3D = BoneAttachment3D.new()
+    bone_attachment.bone_name = equipment_data.slot_bone_name
+    skeleton_3d.add_child(bone_attachment)
+
+    var weapon_instance: Node3D = equipment_data.get_equipment_instance()
+    bone_attachment.add_child(weapon_instance)
     return
 
 
