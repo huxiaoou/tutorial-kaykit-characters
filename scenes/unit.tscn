@@ -1,14 +1,13 @@
 [gd_scene format=3 uid="uid://dhpjj3qwihukj"]
 
 [ext_resource type="Script" uid="uid://crdab47ojip2w" path="res://scenes/unit.gd" id="1_o7ajc"]
-[ext_resource type="Resource" uid="uid://tugav13k6r3n" path="res://resources/axe_2handed.tres" id="2_k673f"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_o7ajc"]
 height = 2.5371094
 
 [node name="Unit" type="CharacterBody3D" unique_id=1529780372]
 script = ExtResource("1_o7ajc")
-data_equipment = ExtResource("2_k673f")
+equipment = 14
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1384527490]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2626953, 0)
