@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dqu3h0xokpl55"]
 
 [ext_resource type="PackedScene" uid="uid://dhpjj3qwihukj" path="res://scenes/unit.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://drfkfa5u3no6c" path="res://scenes/2d-characters/unit_2d.tscn" id="2_0wfyh"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o5qli"]
 sky_top_color = Color(0.6939875, 0.35551327, 0.033437107, 1)
@@ -60,3 +61,5 @@ mesh = SubResource("BoxMesh_0wfyh")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=2081245924]
 shape = SubResource("BoxShape3D_0wfyh")
+
+[node name="Unit2D" parent="." unique_id=416356215 instance=ExtResource("2_0wfyh")]
