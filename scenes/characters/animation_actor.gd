@@ -54,7 +54,7 @@ func play_running_b() -> void:
 
 
 func play_attack() -> void:
-    animation_player.play("Player/Throw", TRANSITION_TIME)
+    animation_player.play("Player/Melee_1H_Attack_Chop", TRANSITION_TIME)
 
 
 func play_jump_full_short() -> void:
